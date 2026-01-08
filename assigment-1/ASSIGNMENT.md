@@ -1,6 +1,6 @@
 # Zadatak 1:
 
-Napisati programe za šifriranje i dešifrovanje zadatog teksta Hilovim šifratorom. Predvideti unos matrice ključa dimenzija 4x4 sa tastature. Sve operacije se izvode po modulu 27. Slova lj, nj i dž, tretirati kao par slova. Oba programa treba da obuhvate proveru validnosti ključa, tj. da li je moguće naći inverznu matricu.
+Napisati programe za šifriranje i dešifrovanje zadatog teksta Hillovim šifratorom. Predvideti unos matrice ključa dimenzija 4x4 sa tastature. Sve operacije se izvode po modulu 27. Slova lj, nj i dž, tretirati kao par slova. Oba programa treba da obuhvate proveru validnosti ključa, tj. da li je moguće naći inverznu matricu.
 
 Rešenje treba da sadrži:
 
