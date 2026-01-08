@@ -29,6 +29,8 @@ def main():
     if not is_valid:
         print("GRESKA: Kljuc nije validan!")
         print(result)
+        print()
+        input("Pritisnite Enter za izlaz...")
         return
 
     print("Kljuc je validan!")
@@ -39,6 +41,8 @@ def main():
 
     if not plaintext:
         print("GRESKA: Tekst ne moze biti prazan.")
+        print()
+        input("Pritisnite Enter za izlaz...")
         return
 
     ciphertext = encrypt_text(plaintext, key_matrix)
@@ -50,6 +54,8 @@ def main():
     print(f"Originalni tekst: {plaintext}")
     print(f"Sifrovani tekst:  {ciphertext}")
     print("=" * 50)
+    print()
+    input("Pritisnite Enter za izlaz...")
 
 if __name__ == "__main__":
     main()

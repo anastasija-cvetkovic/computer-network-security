@@ -5,14 +5,14 @@ def validate_key(key_matrix):
     det = det % 27
 
     if det == 0:
-        return False, "Determinanta matrice je 0. Matrica nema inverznu matricu."
+        return False, "Determinanta matrice je 0. Matrica nema inverznu matricu po modulu 27."
 
     if gcd(det, 27) != 1:
-        return False, f"gcd(determinanta, 27) = gcd({det}, 27) = {gcd(det, 27)} != 1. Matrica nema multiplikativnu inverznu matricu."
+        return False, f"gcd(determinanta, 27) = gcd({det}, 27) = {gcd(det, 27)} != 1. Determinanta nema multiplikativnu inverzu po modulu 27, pa matrica nema inverznu matricu po modulu 27."
 
     inverse = matrix_inverse(key_matrix, 27)
     if inverse is None:
-        return False, "Nije moguce izracunati inverznu matricu."
+        return False, "Nije moguce izracunati inverznu matricu po modulu 27."
 
     return True, inverse
 
