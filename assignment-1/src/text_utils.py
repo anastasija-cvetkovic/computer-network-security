@@ -13,7 +13,7 @@ def text_to_numbers(text):
 
     text = text.replace('lj', 'l j')
     text = text.replace('nj', 'n j')
-    text = text.replace('dž', 'd ž')
+    text = text.replace('dž', 'd z')
 
     cleaned_text = ''
     for char in text:
